@@ -1,0 +1,27 @@
+{
+  "name": "OCN Unread Hider",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Hides annoying unread labels",
+  "homepage_url": "http://ericzeiberg.com",
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "http://oc.tc/forums/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://oc.tc/forums/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

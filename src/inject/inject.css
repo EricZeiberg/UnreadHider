@@ -1,0 +1,11 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+
+.label-warning {
+	 display: none !important; 
+}
+
+.icon {
+	display: none !important;
+}
